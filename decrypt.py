@@ -1,4 +1,4 @@
-import modulo_arithmetic
+import modulo_arithmetic as modulo_arithmetic
 
 # my prime numbers
 p = 16411
@@ -7,9 +7,8 @@ q = 16417
 N = p * q  # 269419387
 phi_of_N = (p-1) * (q - 1)  # 269386560
 
-# my exponent
-e = 65537
 
+e = 65537  # my exponent
 d = modulo_arithmetic.multiplicative_inverse(e, phi_of_N)  # 163267073
 
 # ciphertext from partner

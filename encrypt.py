@@ -1,4 +1,4 @@
-import modulo_arithmetic
+from modulo_arithmetic import square_and_multiply
 
 N = 2667790481  # public key of my partner
 e = 1217401139  # exponent of my partner
@@ -15,7 +15,7 @@ print("Plaintext in hexadecimal chunks:", plaintext_chunks)
 
 ciphertext_chunks = []
 for text in plaintext_chunks:
-    cipher = modulo_arithmetic.square_and_multiply(int(text, 16), e, N)
+    cipher = square_and_multiply(int(text, 16), e, N)
     # cipher = pow(int(text, 16), e, N)
     ciphertext_chunks.append(cipher)
 

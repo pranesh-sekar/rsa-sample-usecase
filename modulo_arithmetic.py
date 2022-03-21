@@ -1,3 +1,7 @@
+import sys
+sys.path.append('./')
+
+
 def square_and_multiply(num, e, modulo):
     exp = bin(e)
     value = num
