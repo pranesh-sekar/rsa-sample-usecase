@@ -1,0 +1,45 @@
+# IDs
+MY_ID = 40195581
+PARTNER_ID = 40197833
+
+# my data
+p = 16411
+q = 16417
+N = 269419387
+phi_N = 269386560
+e = 65537
+d = 163267073
+
+# my partner data
+PARTNER_N = 2667790481
+PARTNER_e = 1217401139
+
+# encryption
+MY_MESSAGE = "Hello Harpreet"
+MY_MESSAGE_chunks = ["Hel", "lo ", "Har", "pre", "et"]
+MY_CIPHERTEXT = [1069900080, 2116008764, 1919727541, 2557956536, 248623656]
+
+# decryption
+PARTNER_CIPHERTEXT = [267560136, 110706760, 162709083, 223920506, 76567147]
+PARTNER_MESSAGE_chunks_AFTER_DECRYPT = ["Hel", "lo ", "Pra", "nes", "h"]
+PARTNER_MESSAGE_AFTER_DECRYPT = "Hello Pranesh"
+
+
+# sign
+MY_MESSAGE_TO_BE_SIGNED = "Pranesh Sekar"
+MY_MESSAGE_TO_BE_SIGNED_chunks = ["Pra", "nes", "h S", "eka", "r"]
+MY_SIGNATURE = [31958970, 62660191, 136663937, 125250327, 65140746]
+
+# verfiy the signature
+PARTNER_SIGNED_MESSAGE = "Harpreet Singh"
+PARTNER_SIGNATURE = [2288450091, 2603155990, 341728729, 1086428306, 607685959]
+#IS_VALID_SIGNATURE should be True or False
+IS_VALID_SIGNATURE = True
+
+
+
+COMMENTS = '''
+# If you have a short comment, write it here
+# Please if you have any queries or difficulties in using this project, please email me at
+# pranesh2014@gmail.com
+'''
